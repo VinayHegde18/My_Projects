@@ -1,0 +1,68 @@
+<html>
+<head>
+<title>Login</title>
+<style>
+div{
+     background-color:black;
+     width: 600px;
+     height: 400px;
+     padding: 20px;
+     margin: 100px;
+     opacity: 0.8;
+}
+body{
+     background-image:url("70.jpeg");
+     background-repeat:no-repeat;
+     background-size:cover;
+     background-attachment:fixed;
+}
+h1{
+font-size:40px;
+color:orange;
+}
+input{
+background-color:black;
+color:white;
+height:35px;
+width:220px;
+}
+input.a{
+width:125px;
+border-radius:25px;
+background-color:orange;
+}
+</style>
+<script>
+     function validateform(){  
+var name =document.myform.name.value;  
+var password =document.myform.password.value;    
+if (name==null || name=="")
+{  
+  alert("Name can't be blank");  
+  return false;  
+}
+else if(password.length<6)
+{  
+  alert("Password must be at least 6 characters long.");  
+  return false;  
+  }  
+}  
+</script>
+</head>
+<body text="white">
+<center>
+<div>
+<h1>LOGIN</h1>
+<form name="myform"method="post"action="/home/vinay/webprograms/VinayHegde/Homepage.html"onsubmit="return validateform()" >
+<table>
+<tr><td>Username:</td><td><input type="text"name="name"></td></tr></br></br>
+<tr><td>Password:</td><td><input type="password"name="password"></td></tr>
+</table></br>
+<input type="submit"value="Login"class="a"></a><br></br>
+<a href="/home/vinay/webprograms/VinayHegde/Registration_form.html">Register Here</a>
+</form>
+</div>
+</center>
+</body>
+</html>
+
